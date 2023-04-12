@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    background-color: #F2F651;
+  
+}
+/* HEAD */
+#navMain{
+    background-color: #FE3130;
+    
+    box-shadow: 10 px 10 px #811717;
+}
+
+#navContainer{
+    background-color: #FE3130;
+}
+#navIcon{
+    display: flex;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 10px 10px 5px #811717;
+    margin-bottom: 20px;
+}
+
+
+/* Main BODY */
+
+#carouselContainer{ /* Carousel */
+    border: 10px solid black;
+}
+#buttonCarousel{
+    color: black;
+}
+#subtittle{
+    margin: 50px;
+}
+#listBurger{
+    border: 5px black solid;
+
+}
+#listGroup{
+    display:flex;
+    padding:25px 20px 20px -100px;
+    margin: 10px 15px 10px ;
+}
+.comprasTittle{
+    display:flex;
+    align-items: center;
+    margin-left: 30%;
+    
+}
