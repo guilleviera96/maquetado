@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rápidos y sabrosos</title>
-    
+    <!-- Icono de pestaña -->
+    <link rel="shortcut icon" href="assets/logo.png">
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- bootstrap CSS-->
@@ -15,251 +17,371 @@
     <!-- js -->
     <script src="js/main.js"></script>
 </head>
+
 <body>
     <header>
         <!-- barra de navegación principal -->
-        <nav id = "navMain"class="navbar navbar-expand-lg bg-light">
-            <div id = "navContainer" class="container">
-              <a id = ""class="navbar-brand" href="#">
-                <img id = "navIcon"src="assets/logo.png" alt="Icono" >
-                <ul class="navbar-brand">
-                    <li class="navbar-brand" href="index.html">Inicio</li>
-                    <li class="">Quiénes somos?</li>
-                    <li class="">Productos</li>
-                    <li class="">Personal</li>
-                    <li class="">Contactenos</li>
-                </ul>
-              </a>
+        <nav class="navbar navbar-expand-lg navbarMain">
+            <div class="container-fluid">
+                <a class="navbar-brand" d-inline-block align-text-top"" href="#"><img class="navIcon"
+                        src="assets/navIcon.png" width="40" height="40" alt="LogoPage"></a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link boton" href="index.html">Inicio</a>
+                        <a class="nav-link boton" href="#nosotros">Nosotros</a>
+                        <a class="nav-link boton" href="#productos">Productos</a>
+                        <a class="nav-link boton" href="#personal">Presentación personal</a>
+                        <a class="nav-link " href="#contacto">Contacto</a>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
-        <!-- TEST DE CARRUSEL-SLIDER -->
-        <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button id = "buttonCarousel"type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button id = "buttonCarousel"type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button id = "buttonCarousel"type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-  
-    <!-- The slideshow/carousel -->
-    <div id = "carouselContainer"class="carousel-inner">
-        <!-- Main Burger -->
-      <div class="carousel-item active">
-        <img src="assets/burger1.jpg" alt="Clasica" class="d-block w-100">
-      </div>
-      <!-- Burger de pollo -->
-      <div class="carousel-item">
-        <img src="assets/burger2.jpg" alt="Chicken burger " class="d-block w-100">
-        <h3>Chicken Burger</h3>
-          <p>Nuestra hamburguesa de Pollo!</p>
-      </div>
-      
-        <!-- Vegan Burger -->
-      <div class="carousel-item">
-        <img src="assets/veganburger1.jpg" alt="Vegan Burger" class="d-block w-100">
-      </div>
-    </div>
-  
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-       
-        <!-- SECCIÓN NOSOTROS - QUIENES SOMOS? -->
-        <div id="containerGeneral" class="container-fluid border">
-            <section name = "whoweareSection" id = "whoweareSection">
-                <h4>Quiénes somos?</h4>
-                <p>Alan, Sofía, Facundo y Guillermo eran amigos de la infancia y siempre habían soñado con abrir su propia empresa de comida rápida. Cada uno tenía habilidades y experiencia únicas, así que decidieron
-                    crear "Rápidos y Sabrosos".
-
-                    Su idea principal era ofrecer comida rápida saludable y deliciosa a precios razonables. Para lograr esto, se centraron en ingredientes frescos y naturales, y en una preparación rápida y eficiente. Querían que sus clientes pudieran disfrutar de una comida rápida sabrosa sin sentirse culpables por la calidad de los ingredientes.
-                    
-                    Para empezar, alquilaron una pequeña caravana de comida y comenzaron a ofrecer sus productos en festivales y eventos locales. La respuesta fue abrumadoramente positiva, con muchos clientes emocionados por la opción de comida rápida saludable. Con el tiempo, se les presentó la oportunidad de abrir su primer local en un centro comercial de la ciudad.
-                    
-                    El éxito del primer local de "Rápidos y Sabrosos" llevó a la apertura de nuevos locales en toda la ciudad. Alan, Sofía, Facundo y Guillermo se aseguraron de mantener su compromiso con ingredientes frescos y saludables, trabajando con proveedores locales y evitando ingredientes artificiales y conservantes.
-                    
-                    Con el tiempo, la empresa se expandió a otras ciudades y se convirtió en un referente en el sector de la comida rápida saludable. La calidad de sus productos y la rapidez en el servicio hicieron que los clientes siguieran regresando.
-                    
-                    Hoy en día, "Rápidos y Sabrosos" sigue siendo propiedad de Alan, Sofía, Facundo y Guillermo. A pesar de su éxito, siguen comprometidos con ofrecer una opción de comida rápida saludable y deliciosa a sus clientes. La empresa continúa expandiéndose, ofreciendo opciones de comida rápida saludables y sabrosas en nuevas ciudades y países.</p>
-            </section>
-        </div>
-            
-            <hr>
-
-             <!-- Sección de compras -->
-             <div id = "generalContainer" class="container-fluid border">
-                <section id ="buySection"name="buySection" >
-                <h3 class="comprasTittle">Prueba nuestros productos!</h3>
-                <!-- Primer hamburguesa -->
-                
-                    <div class="row col-md-4">
-                        <div id= "imageBurger" class="container-fluid">
-                        <h4 >Rápida y Sabrosa</h4>
-                        <p>Nuestra hamburguesa estrella! Querida por todos!.
-                            <img class="d-block w-100" src="assets/burger1.jpg" alt="Simple burguer">
-                       
-                        </p>
-                        <p><strong>Ingredientes:</strong></p>
-                        <p>
-                        <ul id="listBurger"class="list-group list-group-flush">
-                            <li id= "listGroup" class="list-group-item">Pan de papa</li>
-                            <li id= "listGroup" class="list-group-item">Medallon carne vacuna de 150g</li>
-                            <li id= "listGroup" class="list-group-item">Queso cheddar</li>
-                            <li id= "listGroup" class="list-group-item">Queso de cabra</li>
-                            <li id= "listGroup" class="list-group-item">Salsa Picante</li>
-                        </ul>
-                        </p>
-                        
-                    </div>
-                    </div>
-                    
-                    <!-- segunda hamburguesa -->
-                    <div class="row col-md-4">
-                        
-                        <div id= "imageBurger" class="container-fluid">
-                            <h4>Chicken Burger</h4>
-                        <p>Hamburguesa de pollo, para los que prefieren variar</p>
-                            <img class="d-block w-100" src="assets/burger2.jpg" alt="Chicken burger">
-                            <p><strong>Ingredientes:</strong></p>
-                            <p>
-                                <ul id="listBurger"class="list-group list-group-flush">
-                                <li id= "listGroup" class="list-group-item">Pan de queso y sésamo</li>
-                                <li id= "listGroup" class="list-group-item">Pechuga rebosada con pan</li>
-                                <li id= "listGroup" class="list-group-item">Queso cheddar</li>
-                                <li id= "listGroup" class="list-group-item">Cebolla morada</li>
-                                <li id= "listGroup" class="list-group-item">Pepinillos</li>
-                            </ul>
-                        </p>
-                        </div>
-
-                    </div>
-                    <!-- Tercera hamburguesa -->
-
-                   <div class="row col-md-4">
-                    <div id= "imageBurger" class="container-fluid">
-                        <h4>Cheese Burger</h4>
-                        <p>Nuestra ultima creación, la hamburguesa de queso con cebolla caramelizada que te hará viajar.</p>
-                        <img src="assets/burgercheese3.jpg" alt="Cheese Burger" class="d-block w-100">
-                        <p><strong>Ingredientes:</strong></p>
-                        <p>
-                            <ul id="listBurger"class="list-group list-group-flush-sm">
-                                <li id= "listGroup" class="list-group-item">Pan de papa</li>
-                                <li id= "listGroup" class="list-group-item">Medallón de carne 150g</li>
-                                <li id= "listGroup" class="list-group-item">Triple queso cheddar</li>
-                                <li id= "listGroup" class="list-group-item">Cebolla caramelizada</li>
-                                <li id= "listGroup" class="list-group-item">Salsa con pepinillos</li>
-                            </ul>
-                        </p>
-                    </div>
-                   </div>
-                    <!-- Cuarta hamburguesa -->
-                    <div class="row col-md-4">
-                        <div id= "imageBurger" class="container-fluid">
-                            <h4>Vegan Burger</h4>
-                            <p>Hemos ampliado nuestros horizontes con la vegan burger y ha venido para quedarse. Es una bomba!</p>
-                            <img src="assets/veganburger1.jpg" alt="Vegan Burger" class="d-block w-100">
-                            <p><strong>Ingredientes:</strong></p>
-                            <p>
-                                <ul id="listBurger"class="list-group list-group-flush-xl">
-                                    <li id="listGroup" class="list-group-item">Pan de salvado con sésamo</li>
-                                    <li id="listGroup" class="list-group-item">Tomate en rodajas</li>
-                                    <li id="listGroup" class="list-group-item">Cebolla morada</li>
-                                    <li id="listGroup" class="list-group-item">Pepino</li>
-                                    <li id="listGroup" class="list-group-item">Rúcula</li>
-                                    <li id="listGroup" class="list-group-item">Medallón Veggie</li>
-                                    <li id="listGroup" class="list-group-item">Salsa Veggie</li>
-                                    
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                    
-                
-                
-            </section>
+        <!-- Carrusel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div id="indicatorsContainer" class="carousel-indicators">
+                <button id="buttonCarousel" type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                    class="active"></button>
+                <button id="buttonCarousel" type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button id="buttonCarousel" type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
-            
-        </div>
-            <!-- Sección Presentación Personal -->
 
-            <div id="containerGeneral" class="container-fluid border">
-                <section name="personalSection" id = "personalSection">
-                    <h4 >Presentación personal</h4>
-                    <p>En esta sección se detallara una breve presentación personal de cada uno de los integrantes del grupo. </p>
-                    <ul class="list-group" type= "A">
-                        <li class="list-group" >Latvenas Sofía</li>
-                        <li class="list-group">Lescano Alan</li>
-                        <li class="list-group">Merlini Facundo</li>
-                        <li class="list-group">Viera Guillermo</li>
-                    </ul>
-                </section>
+            <!-- Slide-carrusell -->
+            <div id="carouselContainer" class="carousel-inner">
+                <!-- Primera Burger -->
+                <div class="carousel-item active">
+                    <img src="assets/burger1.jpg" alt="Clasica" class="d-block w-100 h-100">
+                </div>
+                <!-- Burger de pollo -->
+                <div class="carousel-item">
+                    <img src="assets/burger2.jpg" alt="Chicken burger " class="d-block w-100 h-100">
+                </div>
+
+                <!-- Vegan Burger -->
+                <div class="carousel-item">
+                    <img src="assets/veganburger1.jpg" alt="Vegan Burger" class="d-block w-100 h-100">
+                </div>
             </div>
-           
-            <hr>
-            <!-- Sección de contacto -->
-            <div id = "generalContainer"class="container-fluid border">
-                <section id = "contactSection">
-                    <h4 id = "subtittle">Contactenos</h4>
-                    <p>En esta sección puede rellenar el formulario para contactarnos</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <!-- Formulario -->
-                                <form action="#" method="post">
-                                    <div class="form-group">
-                                        <label for="name">Nombre:</label>
-                                        <input type="text" class="form-control" id="name" name="name" required>
+            <!-- izq y derecha flechas/iconos -->
+            <button id="buttonContainer" class="carousel-control-prev" type="button" data-bs-target="#demo"
+                data-bs-slide="prev">
+                <span id="spanContainer" class="carousel-control-prev-icon"></span>
+            </button>
+            <button id="buttonContainer" class="carousel-control-next" type="button" data-bs-target="#demo"
+                data-bs-slide="next">
+                <span id="spanContainer" class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- Sección nosotros -->
+        <div class="m-5">
+            <section id="nosotros" class="row p-2">
+                <div class="col-12 align-content-center p-3">
+                    <h3 class="text-center subrayados">Quienes somos</h3>
+                </div>
+                <div class="col-12 align-content-center nosotrosBordes p-4">
+                    <p id="parrafo" class="text-justify m-0">Alan, Sofía, Facundo y Guillermo eran amigos de la infancia
+                        y siempre
+                        habían soñado
+                        con abrir su propia empresa de comida rápida. Cada uno tenía habilidades y experiencia únicas,
+                        así que decidieron
+                        crear "Rápidos y Sabrosos".
+
+                        Su idea principal era ofrecer comida rápida saludable y deliciosa a precios razonables. Para
+                        lograr esto, se centraron en ingredientes frescos y naturales, y en una preparación rápida y
+                        eficiente. Querían que sus clientes pudieran disfrutar de una comida rápida sabrosa sin sentirse
+                        culpables por la calidad de los ingredientes.
+
+                        Para empezar, alquilaron una pequeña caravana de comida y comenzaron a ofrecer sus productos en
+                        festivales y eventos locales. La respuesta fue abrumadoramente positiva, con muchos clientes
+                        emocionados por la opción de comida rápida saludable. Con el tiempo, se les presentó la
+                        oportunidad de abrir su primer local en un centro comercial de la ciudad.
+
+                        El éxito del primer local de "Rápidos y Sabrosos" llevó a la apertura de nuevos locales en toda
+                        la ciudad. Alan, Sofía, Facundo y Guillermo se aseguraron de mantener su compromiso con
+                        ingredientes frescos y saludables, trabajando con proveedores locales y evitando ingredientes
+                        artificiales y conservantes.
+
+                        Con el tiempo, la empresa se expandió a otras ciudades y se convirtió en un referente en el
+                        sector de la comida rápida saludable. La calidad de sus productos y la rapidez en el servicio
+                        hicieron que los clientes siguieran regresando.
+
+                        Hoy en día, "Rápidos y Sabrosos" sigue siendo propiedad de Alan, Sofía, Facundo y Guillermo. A
+                        pesar de su éxito, siguen comprometidos con ofrecer una opción de comida rápida saludable y
+                        deliciosa a sus clientes. La empresa continúa expandiéndose, ofreciendo opciones de comida
+                        rápida saludables y sabrosas en nuevas ciudades y países.</p>
+                </div>
+            </section>
+            <section id="productos">
+                <div class="row p-3">
+                    <h3 class="text-center subrayados ">Productos</h3>
+                </div>
+                <div class="d-grid gap-5"><!-- Primera Hamburguesa -->
+                    <div class="row">
+                        <h4 class="p-1">Rápida y sabrosa</h4>
+                        <div class="col-5">
+                            <img src="assets/burger1.jpg" alt="Hamburguesa 1" class="img-fluid imgProduct">
+                        </div>
+                        <div class="col-7 productosBordes p-4">
+                            <p>
+                                La hamburguesa "Rápida y Sabrosa" es la opción perfecta para aquellos que buscan una
+                                comida
+                                rápida pero deliciosa. Comienza con una jugosa y sabrosa carne de res, cuidadosamente
+                                seleccionada y cocida a la perfección. Luego se coloca sobre una cama de lechuga fresca
+                                y
+                                crujiente, y se agrega una generosa porción de tomates frescos y rodajas de cebolla roja
+                                para un
+                                sabor extra. Para terminar, se cubre todo con una deliciosa salsa secreta que combina
+                                sabores
+                                dulces y picantes, que se desliza suavemente por la hamburguesa con cada mordida. Todo
+                                esto
+                                se
+                                coloca entre dos panes de hamburguesa recién horneados y tostados en su punto justo, que
+                                le
+                                dan
+                                a la hamburguesa "Rápida y Sabrosa" ese toque final y crujiente. ¡Prueba esta
+                                hamburguesa y
+                                tendrás una comida rápida y satisfactoria llena de sabor! </p>
+                            <div class="row accordion-item">
+                                <button class="accordion-button collapsed p-3 botonIngredientes" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Ingredientes
+                                </button>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div id="accordionBody" class="accordion-body acordeonBorde">
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item listBurger">Pan de papa</li>
+                                            <li class="list-group-item listBurger">Medallon carne vacuna de 150g
+                                            </li>
+                                            <li class="list-group-item listBurger">Queso cheddar</li>
+                                            <li class="list-group-item listBurger">Queso de cabra</li>
+                                            <li class="list-group-item listBurger">Salsa Picante</li>
+                                        </ul>
+
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="email" class="form-control" id="email" name="email" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="asunto">Asunto:</label>
-                                        <input type="text" class="form-control" id="asunto" name="asunto" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="mensaje">Mensaje:</label>
-                                        <textarea class="form-control" rows="5" id="mensaje" name="mensaje" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-            
-            <hr>
+                    <!-- Segundo hamburguesa -->
+                    <div class="row">
+                        <h4 class=" p-1">Chicken Burger</h4>
+                        <div class="col-7 productosBordes p-4">
+                            <p>
+                                La Chicken Burger es una hamburguesa de pollo deliciosa y jugosa, elaborada con carne de
+                                pollo
+                                de alta calidad sazonada con una mezcla de especias que le aporta un sabor único y
+                                exquisito. La
+                                carne de pollo se cocina a la perfección y se coloca sobre un pan suave y esponjoso, que
+                                puede
+                                estar tostado para darle un toque extra de sabor y textura. </p>
 
-           
-       
+                            <div class="row accordion-item">
+                                <button class="accordion-button collapsed p-3 botonIngredientes" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Ingredientes
+                                </button>
 
-    </main>
-    <footer>
-        <div id = "generalContainer" class = "container-fluid border">
-            <div class="container-fluid">
-                <h4>Este es el footer</h4>
-            </div>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div id="accordionBody" class="accordion-body acordeonBorde">
+
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item listBurger">Pan de queso y sésamo</li>
+                                            <li class="list-group-item listBurger">Pechuga de pollo rebozada de 150g
+                                            </li>
+                                            <li class="list-group-item listBurger">Queso cheddar</li>
+                                            <li class="list-group-item listBurger">Cebolla Morada</li>
+                                            <li class="list-group-item listBurger">Pepinillos</li>
+                                            <li class="list-group-item listBurger">Aderezo especial de la casa</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img src="assets/burger2.jpg" alt="Hamburguesa 1" class="img-fluid imgProduct">
+                        </div>
+                    </div>
+                </div>
+                <!-- Tercera hamburguesa -->
+                <div class="row">
+                    <h4 class="p-1">Veggie burguer</h4>
+                    <div class="col-5">
+                        <img src="assets/veganburger1.jpg" alt="Hamburguesa 1" class="img-fluid imgProduct">
+                    </div>
+                    <div class="col-7 productosBordes p-4">
+                        <p>
+                            La Veggie Burger es una hamburguesa vegana deliciosa y satisfactoria, elaborada con una
+                            combinación de ingredientes frescos y saludables. En lugar de carne de res, esta hamburguesa
+                            se
+                            basa en una mezcla de verduras y proteínas vegetales, como garbanzos, lentejas y arvejas,
+                            que se
+                            condimentan con una variedad de especias y hierbas para obtener un sabor delicioso y
+                            auténtico. </p>
+                        <div class="row accordion-item">
+                            <button class="accordion-button collapsed p-3 botonIngredientes" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Ingredientes
+                            </button>
+
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="accordionBody" class="accordion-body acordeonBorde">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item  listBurger">Pan de salvado con sésamo</li>
+                                        <li class="list-group-item listBurger">Medallon veggie de 150g
+                                        </li>
+                                        <li class="list-group-item listBurger">Cebolla Morada</li>
+                                        <li class="list-group-item listBurger">Rúcula</li>
+                                        <li class="list-group-item listBurger">Pepinos frescos</li>
+                                        <li class="list-group-item listBurger">Salsa Picante</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    
+        <div class="container-fluid">
+            <div class="row m-5">
+                <section id="personal">
+                    <div class="row p-3">
+                        <h4 class="text-center subrayados">Presentación personal</h4>
+                        <div class="col-3 p-4">
+                            <img src="img/Sofia.png" class="img-fluid imgPersonal  w-100" alt="">
+                            <h5 class="text-center p-2 subtittlePersonal">Sofía Latvenas</h5>
+                            <div class="row">
+                                <div class="col-md-12 personalLore p-3">
+                                    <p>Sofía Latvenas, 26 años, Estudiante de desarrollo de software. Moza en "Rapidos y
+                                        furiosos". "Yo creo que el trato con la comida empieza desde que uno se sienta
+                                        en la
+                                        mesa, y mi objetivo en nuestro local es hacer sentir al cliente tan cómodo como
+                                        en
+                                        la mesa de su casa".</p>
+                                </div>
+                            </div>
 
-    </footer>
-    
 
- 
-    
+                        </div>
+                        <div class="col-3 p-4">
+                            <img src="img/Alan.jpeg" class="img-fluid imgPersonal w-100" alt="">
+                            <h5 class="text-center p-2 subtittlePersonal">Alan Lescano</h5>
 
+                            <div class="row">
+                                <div class="col-md-12 personalLore p-3">
+                                    <p>Alan Lescano , 27 años, comerciante de la ciudad de Quilmes y delivery en
+                                        "Rapidos y
+                                        Sabrosos". "Mi objetivo es que tu pedido llegue a tiempo y sin demoras".
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 p-4">
+                            <img src="img/Facundo.jpeg" class="img-fluid imgPersonal w-100" alt="">
+                            <h5 class="text-center p-2 subtittlePersonal">Facundo Merlini</h5>
+                            <div class="row">
+                                <div class="col-md-12 personalLore p-3">
+                                    <p>Facundo Merlini, 26 años, Estudiante de abogacía. Chef en "Rapidos y Sabrosos".
+                                        "La cocina es todo lo que se ve reflejado en la cara del cliente, mi objetivo en
+                                        nuestro local es hacerlo sentir a gusto"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 p-4">
+                            <img src="img/Guille.jpeg" class="img-fluid imgPersonal w- " alt="">
+                            <h5 class="text-center p-2 subtittlePersonal">Guillermo Viera</h5>
+                            <div class="row">
+                                <div class="col-md-12 personalLore p-3">
+                                    <p>Guillermo Viera, 26 años, estudiante de desarrollo de software en la ciudad de
+                                        Posadas, Misiones. Ayudante de cocina en "Rápidos y sabrosos". "Mi objetivo es
+                                        ser
+                                        eficiente a la hora de cocinar para poder brindar la mejor calidad de producto y
+                                        que
+                                        los clientes se sientas felices con nosotros."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+            </div>
+            </section>
+            <!-- Formulario -->
 
-<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+            <section name="contactSection" id="contactSection" class="container-fluid contenedor-formulario">
+                <form class="row formulario" action="https://formsubmit.co/rapidosysabrosos23@gmail.com" method="POST"
+                    onsubmit="enviarFormulario()">
+                    <div class="col">
+                        <div>
+                            <h4>¡Hablemos!</h4>
+                        </div>
+
+                        <div>
+                            <legend>
+                                <h5>¿Tenés dudas, consultas, reclamos o sugerencias? Contactanos.</h5>
+                            </legend>
+                        </div>
+
+                        <div>
+                            <label>Nombre:</label><br>
+                            <input type="text" class="input-formulario form-control" placeholder="Escriba su nombre"
+                                name="name" required><br>
+
+                        </div>
+
+                        <div>
+                            <label>E-mail:</label><br>
+                            <input type="mail" class="input-formulario form-control"
+                                placeholder="Ejemplo: Usuario@correo.com" name="mail" required><br>
+                        </div>
+
+                        <div>
+                            <label>Asunto:</label><br>
+                            <input type="text" class="input-formulario form-control"
+                                placeholder="¿Por qué nos contactas?" name="subject" required><br>
+                        </div>
+
+                        <div>
+                            <label>Mensaje:</label><br>
+                            <textarea type="message" class="input-formulario form-control"
+                                placeholder="Escribenos un mensaje" name="comments" required></textarea><br>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="submit form-control formButton" onclick="enviarFormulario()">Enviar</button><br>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+            <!-- Fin del formulario -->
+        </div>
+    </main>
 </body>
+<footer class="py-3">
+    <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="indexPrueba.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="#nosotros" class="nav-link px-10 text-muted">Nosotros</a></li>
+        <li class="nav-item"><a href="#productos" class="nav-link px-2 text-muted">Productos</a></li>
+        <li class="nav-item"><a href="#personal" class="nav-link px-2 text-muted">Presentación Personal</a></li>
+        <li class="nav-item"><a href="https://campus.argentinaprograma.utn.edu.ar/login/index.php"
+                class="nav-link px-2 text-muted">Aula Virtual</a></li>
+    </ul>
+</footer>
+
 </html>
