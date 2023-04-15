@@ -1,54 +1,106 @@
-*{
-    margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	border: none;
-	outline: none;
-    background-color: #F2F651;
-  
-}
-/* HEAD */
-#navMain{
-    background-color: #FE3130;
+/* body */
+body {
+    /* background-color: #fbfbfb !important; */
+    background-color: #f8f6f6 !important;
     
-    box-shadow: 10 px 10 px #811717;
 }
-
-#navContainer{
-    background-color: #FE3130;
+/* footer */
+footer {
+    background: #fafbac !important;
+    border-top: 1px solid #FE3130;
 }
-#navIcon{
+/* Icono del navbar */
+.navIcon{
+    border-radius: 10px;
+}
+/* Carrusel */
+#carouselContainer {
     display: flex;
-    border-radius: 30px 30px 30px 30px;
-    box-shadow: 0px 10px 10px 5px #811717;
-    margin-bottom: 20px;
+    max-height: 500px;
+}
+
+.nosotrosBordes {
+    border: 1px solid #FE3130;
+    border-radius: 20px;
 }
 
 
-/* Main BODY */
 
-#carouselContainer{ /* Carousel */
-    border: 10px solid black;
+.productosBordes {
+    border: 1px solid #FE3130;
+    background-color: #fff;
+    border-radius: 20px;
 }
-#buttonCarousel{
-    color: black;
+
+.botonesBordes,
+.acordeonBorde {
+    border: 1;
+    border-radius: 20px;
 }
-#subtittle{
-    margin: 50px;
+
+.botonIngredientes {
+    border-radius: 20px !important;
+    background-color: #fafbac !important;
 }
-#listBurger{
-    border: 5px black solid;
+
+.imgProduct,
+.imgPersonal {
+    border-radius: 20px;
+}
+
+.subrayados {
+    border-bottom: 2px solid #fafbac;
 
 }
-#listGroup{
-    display:flex;
-    padding:25px 20px 20px -100px;
-    margin: 10px 15px 10px ;
+
+.listBurger {
+    border-bottom: 2px solid #fafbac !important;
 }
-.comprasTittle{
-    display:flex;
+/* Seccion presentacion personal */
+.personalLore {
+    min-height: 300px !important;
+    background-color: #fafbac;
+}
+.subtittlePersonal {
+    border-bottom: 2px solid #FE3130 !important
+}
+
+
+.navbarMain {
+    background-color: #fafbac;
+}
+
+.boton {
+
+    border-right: 1px solid #FE3130;
+}
+
+/* Footer */
+
+
+/* Formulario de contacto y reclamos */
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 30%;
-    
+    border-radius: 40%;
 }
+
+#hablemos {
+    text-align: center;
+}
+
+.formulario {
+    border: 1px solid #FE3130;
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.submit {
+    background-color: #fafbac !important;
+    border: none !important;
+}
+
+/* Fin del formulario */
